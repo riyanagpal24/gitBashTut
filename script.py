@@ -16,3 +16,4 @@ def outer_function():
 a = 10
 outer_function()
 print('a =',a)
+print("hello world")
