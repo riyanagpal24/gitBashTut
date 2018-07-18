@@ -1,19 +1,18 @@
-# Program to add natural
-# numbers upto 
-# sum = 1+2+3+...+n
+#namespace example
 
-# To take input from the user,
-# n = int(input("Enter n: "))
+def outer_function():
+    global a
+    a = 20
+    print("outer")
+    def inner_function():
+        global a
+        a = 30
+        print('a =',a)
+        print("inner")
 
-n = 10
-
-# initialize sum and counter
-sum = 0
-i = 1
-
-while i <= n:
-    sum = sum + i
-    i = i+1    # update counter
-
-# print the sum
-print("The sum is", sum)
+    inner_function()
+    print('global a =',a)
+     
+a = 10
+outer_function()
+print('a =',a)
