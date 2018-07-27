@@ -13,6 +13,6 @@ git commit -m "commit statement"
 git push origin <branchname>
 
 #to sync the changes from remote to local 
-git pull --rebase origin <breanchname>
+git pull --rebase origin <branchname>
 --rebase pulls the changes locally without any merge commits--
 
