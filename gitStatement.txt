@@ -4,15 +4,32 @@
 git checkout -b "branchname"
 
 #to add the changes
-git add <filename>
+	#individually
+	git add <filename>
 
+	#all at once
+	git add .
+
+	#add file of selected pattern
+	git add *.extension
+
+# to add all files excepts specific ones
+
+create a .gitignore file :- touch .gitignore
+metion the exensions in the file to be ignored
 #when all is done, commit the changes
 git commit -m "commit statement"
+
+# to retrieve a list of all the commits
+git log
+
+git fetch origin #fecthes the changes since last comment
+git pull origin # pull the chnages and merges them too
 
 #push the changes to remote reposiroy
 git push origin <branchname>
 
-#to sync the changes from remote to local 
+# to sync the changes from remote to local 
 git pull --rebase origin <branchname>
 --rebase pulls the changes locally without any merge commits--
 
